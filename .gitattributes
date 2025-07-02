@@ -1,0 +1,11 @@
+# Track data folder and all its contents with Git LFS
+data/ filter=lfs diff=lfs merge=lfs -text
+data/** filter=lfs diff=lfs merge=lfs -text
+# Track CSV files in data directories
+*.csv filter=lfs diff=lfs merge=lfs -text
+data/*.csv filter=lfs diff=lfs merge=lfs -text
+data/**/*.csv filter=lfs diff=lfs merge=lfs -text
+# Track PNG files (city maps)
+data/*.png filter=lfs diff=lfs merge=lfs -text
+data/**/*.png filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
